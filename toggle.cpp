@@ -2,12 +2,9 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
-    //msb finding
-    int dig = log2(n)+1;
-    int num = (1<<dig)-1;
-    n ^= num;
+    int n, i;
+    cin>>n>>i;
+    //i is 0 indexed
+    n ^= (1<<i);
     cout<<n;
-    return 0;
 }
